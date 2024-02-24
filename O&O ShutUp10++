@@ -9,7 +9,7 @@ $pastaOTZTEMP = [System.IO.Path]::Combine($diretorioImagens, "OTZTEMP")
 New-Item -ItemType Directory -Path $pastaOTZTEMP -Force
 
 # Baixar o arquivo
-$arquivoBaixado = [System.IO.Path]::Combine($pastaOTZTEMP, "xd2.exe)
+$arquivoBaixado = [System.IO.Path]::Combine($pastaOTZTEMP, "xd2.exe")
 Invoke-WebRequest -Uri $url -OutFile $arquivoBaixado
 
 # Executar o arquivo baixado como administrador
